@@ -1,0 +1,87 @@
+/* Style général pour le corps */
+* {
+    text-decoration: none ;
+    list-style: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fond sombre pour l'effet cinéma */
+    color: #ffffff; /* Texte blanc */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffcc00; /* Couleur dorée pour le titre */
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Conteneur Flexbox pour centrer et espacer les affiches */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'adapter les affiches sur plusieurs lignes */
+    justify-content: center; /* Centre les affiches */
+    gap: 20px; /* Espace entre les affiches */
+    padding: 20px;
+}
+
+/* Style des affiches (articles) */
+article {
+    background-color: #1c1c1c; /* Fond sombre pour chaque carte */
+    border: 2px solid #ffcc00; /* Bordure dorée */
+    border-radius: 10px; /* Coins arrondis */
+    width: 300px; /* Largeur des cartes */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre */
+    text-align: center; /* Centrage du contenu */
+    transition: transform 0.3s ease-in-out; /* Animation fluide */
+}
+
+/* Titre de chaque affiche */
+article strong {
+    color: #ffcc00; /* Couleur dorée pour le titre du film */
+    font-size: 1.5rem;
+}
+
+/* Texte des détails */
+article p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #cccccc; /* Couleur gris clair */
+}
+
+/* Animation au survol */
+article:hover {
+    transform: scale(1.05); /* L'affiche s'agrandit légèrement */
+}
+
+.liste {
+    text-align: center;
+    color: red;
+}
+a {
+    color: white;
+}
+
+.voir {
+    color: #3e78f5;
+}
+
+.modif {
+    color: green;
+}
+
+.supp {
+    color: red;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
